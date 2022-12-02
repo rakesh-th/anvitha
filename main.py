@@ -76,9 +76,7 @@ if st.button('Make Prediction'):
     #adasyn = ADASYN()
     #X_train,y_train = adasyn.fit_resample(X_train,y_train)
 
-    scaler = StandardScaler()
-    X_train = scaler.fit_transform(X_train)
-    X_test = scaler.transform(X_test)
+ 
 
     best_xgboost_model = XGBClassifier()
     best_xgboost_model.fit(X_train, y_train)
