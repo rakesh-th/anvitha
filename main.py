@@ -67,7 +67,7 @@ if uploaded_file is not None:
 
 # predict wether the applicant will default or not not if the credit card is issued
 if st.button('Make Prediction'):
-    inputs = np.expand_dims([inp_Agency, inp_Agency_Type, inp_Dist_Channel, inp_Prod_Name, inp_Destination, input_Commission, input_Net_Sales, input_Age],0)
+    inputs = np.expand_dims([inp_Agency, inp_Agency_Type, inp_Dist_Channel, inp_Prod_Name, input_Commission, input_Net_Sales, input_Age],0)
     #Training the best model(XGBoost) 
     if uploaded_file is not None:
         X = my_data2.drop(['Claim'], axis=1)
