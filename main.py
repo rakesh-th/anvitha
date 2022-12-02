@@ -50,11 +50,6 @@ with left_column:
         'Name of the Product',
         np.unique(data['Prod_Name']))
 
-left_column, right_column = st.columns(2)
-with left_column:
-    inp_Destination = st.radio(
-        'Name of the Destination',
-        np.unique(data['Destination']))  
 
 input_Net_Sales = st.slider('Enter Net Sales', 0.0, max(data["Net_Sales"]), 100.0)
 input_Commission = st.slider('Enter Commission Value', 0.0, max(data["Commission"]), 100.0)
