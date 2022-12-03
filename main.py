@@ -46,13 +46,13 @@ with left_column:
 
 left_column, right_column = st.columns(2)
 with left_column:
-    inp_Prod_Name = st.radio(
+    inp_Prod_Name = st.selectbox(
         'Name of the Product',
         np.unique(data['Prod_Name']))
 
 left_column, right_column = st.columns(2)
 with left_column:
-    inp_Destination = st.radio(
+    inp_Destination = st.selectbox(
         'Name of the Destination',
         np.unique(data['Destination']))  
 
