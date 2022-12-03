@@ -19,7 +19,7 @@ st.text_input("Enter your Name: ", key="name")
 #Load the final pre-processed dataset on which the models will be trained
 #date pre-processing and cleaning is done in phase-1 with original data
 data = pd.read_csv("trav.csv")
-
+data['Destination']=LabelEncoder().fit_transform(data['Destination'])
 # Preview of the datset
 if st.checkbox('Show Training Dataframe'):
     data
