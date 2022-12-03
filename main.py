@@ -28,7 +28,7 @@ if st.checkbox('Show Training Dataframe'):
 st.subheader("Please provide details of your application!")
 left_column, right_column = st.columns(2)
 with left_column:
-    inp_Agency = st.radio(
+    inp_Agency = st.selectbox(
         'Name of the Agency',
         np.unique(data['Agency'])) 
  
