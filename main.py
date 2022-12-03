@@ -88,8 +88,8 @@ if st.button('Make Prediction'):
     #Make prediction and print output
     prediction = best_xgboost_model.predict(inputs)
     if prediction:
-        st.error("Sorry, Your Credit Card will be Declined as you may default in future")
+        st.success("Hurray, Your insurance is claimed")
     else:
-        st.success("Congratulations, Your Credit Card will be Approved")
+        st.error("Sorry,your insurace cannot be claimed")
 
     st.write(f"Thank you {st.session_state.name}! We hope you liked our project.")
